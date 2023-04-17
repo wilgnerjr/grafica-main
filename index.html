@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK PERSONAIZADO -->
+    <meta property="og:title" content="Vermelhinho">
+    <meta property="og:description" content="Soluções Gráficas Inteligentes">
+    <meta property="og:image" content="https://wilgnerjr.github.io/empresa/img/LogoVermelhinho.png">
+    <meta property="og:url" content="https://wilgnerjr.github.io/empresa">
+    <meta property="og:type" content="website">
+    <!-- TÍTULO DA PÁGINA = PAGE TITLE -->
+    <link rel="shortcut icon" href="images/iconeV.ico" type="image/x-icon">
+    <title>Vermelhinho Cópias</title>
+    <!-- IMPORTAÇÕES = IMPORTS -->
+    <!-- FONTES = FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/038682e29c.js" crossorigin="anonymous"></script>
+    <!-- ANIMAÇÕES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="CSS/modal.css"> -->
+</head>
+
+<body id="body" class="padrao">
+
+    <!-- TELA DE ABERTURA INTRODUTORIA -->
+    <div id="telaDeAbertura">
+        <img src="images/logoIntrodutoria.webp" alt="Logo Vermelhinho" id="logoTelaDeAbertura"
+            class="animate__animated animate__backInLeft">
+        <h1 class="animate__animated animate__rollIn">SEJA BEM VINDO!</h1>
+    </div>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+        <nav class="navbar">
+            <p id="mensagem" class=""></p>
+            <a href="#" class="nav-logo">VERMELHINHO</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" onclick="esconder()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link" onclick="esconder()">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos" class="nav-link" onclick="esconder()">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clientes" class="nav-link" onclick="esconder()">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link" onclick="esconder()">Contato</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="slide-container">
+                <div class="slide-item slide1 active">
+                    <h2>PONTUALIDADE E QUALIDADE</h2>
+                </div>
+                <div class="slide-item slide2">
+                    <h2>IMPRIMA COM QUEM ENTENDE</h2>
+                </div>
+                <div class="slide-item slide3">
+                    <h2>SEJA NOSSO FILIADO</h2>
+                </div>
+                <button class="prev-button">&lt;</button>
+                <button class="next-button">&gt;</button>
+            </div>
+        </section>
+        <section id="sobre">
+            <h2><span>V</span>ERMELHINHO</h2>
+            <div class="sobreItems">
+                <div class="sobre sobre1">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                    <h3>MISSÃO</h3>
+                    <p>
+                        Oferecer aos nossos clientes a melhor solução em reprodução gráfica, cópias e acabamentos, a fim
+                        de atender a necessidade e superar as expectativas de cada negócio, oferecendo o conhecimento
+                        especifico na área, acabamentos com qualidade, cumprimento de prazos e atendimento personalizado
+                        agregando valor ao mercado.
+                    </p>
+                </div>
+                <div class="sobre sobre2">
+                    <i class="fa-solid fa-atom"></i>
+                    <h3>VISÃO</h3>
+                    <p>
+                        Ser uma empresa de referência Estadual nos serviços de reprodução gráfica, impressões, cópias e
+                        acabamentos de documentos reconhecida como a melhor opção por clientes, colaboradores,
+                        comunidade e fornecedores, pela qualidade de nossos produtos, serviços e relacionamento.
+                    </p>
+                </div>
+                <div class="sobre sobre3">
+                    <i class="fa-solid fa-marker"></i>
+                    <h3>VALORES</h3>
+                    <ul>
+                        <li>Ética</li>
+                        <li>Respeito</li>
+                        <li>Honestidade</li>
+                        <li>Pontualidade</li>
+                        <li>Legalidade</li>
+                        <li>Equidade</li>
+                        <li>Integração</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="areaProdutos">
+                <div class="produto"
+                    onclick="mostrarModal('https://www.crtcom.com.br/uploads/produtos/adesivo-vinil-brilho-avery-recorte-eletronico-recorte-eletronico-4x0-162013483945660760460914bb7ba2e5.png','Adesivo','<li>Personalização</li> <br> <li>Divulgação</li> <br> <li>Durabilidade</li> <br> <li>Acessibilidade</li> <br> <li>Criatividade</li>','Com os adesivos de papel personalizados, você tem a liberdade de criar designs únicos que refletem sua personalidade e estilo. Além de serem acessíveis, eles são duráveis e resistentes às intempéries, ideais para uso interno. Você também pode usá-los para divulgar sua marca ou mensagem, aplicando-os em embalagens, cadernos, agendas e muito mais. Seja criativo e adicione um toque pessoal aos seus pertences com adesivos personalizados de papel!')">
+                    <div class="produto1"></div>
+                    <label for="produto1">Adesivo</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://images.tcdn.com.br/img/img_prod/965264/banner_com_bastao_e_corda_vertical_181_1_f6c82ffb7f496c410668a9ea8b4197bc.png', 'Banner', '<li>Visibilidade</li> <br> <li>Durabilidade</li> <br> <li>Reutilização</li> <br> <li>Facilidade de instalação</li> <br> <li>Comunicação de informações</li>', 'O banner personalizado é a solução perfeita para promover sua marca, evento ou negócio. Com a possibilidade de personalização, durabilidade e versatilidade, o banner pode ser usado em uma variedade de eventos e locais, tanto internos como externos. Comunique informações importantes e aumente a visibilidade da sua marca com um banner personalizado. Não perca mais tempo, adquira já o seu!')">
+                    <div class="produto2"></div>
+                    <label for="produto2">Banner</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://static.wixstatic.com/media/7e7077_e204f133ae3242ebba9e0a1d4086dabd~mv2.png/v1/fill/w_240,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/COMANDAmockup-min.png', 'Blocos de Comanda','<li>Maior organização e controle</li> <br> <li>Proporciona rapidez e agilidade</li> <br> <li>Facilita Cálculo Final</li> <br> <li>Portifólio De Produtos</li> <br> <li>Comunicação de informações</li>', 'Com os blocos de comandas, você tem a praticidade de ter tudo organizado em um só lugar. Seja para uso em restaurantes, bares, cafés ou eventos, os blocos de comandas ajudam a garantir a eficiência do serviço e a satisfação dos clientes. Além disso, eles são duráveis e resistentes, com uma variedade de opções de tamanho e formato para se adaptar às suas necessidades. Simplifique sua vida e melhore a experiência dos seus clientes com os blocos de comandas!')">
+                    <div class="produto3"></div>
+                    <label for="produto3">Blocos de Comanda</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://teaworld.vteximg.com.br/arquivos/ids/156264-800-800/CaixaTwinings_fechada1000x1000.png?v=638067222389000000', 'Caixa Personalizada', '<li>Personalização</li><br><li>Proteção</li><br><li>Apresentação</li><br><li>Sustentabilidade</li><br><li>Valorização</li> ','Personalize seus presentes com caixas personalizadas! Surpreenda seus amigos e familiares com caixas únicas e exclusivas que refletem sua personalidade e estilo. Escolha entre uma variedade de tamanhos, formatos, cores e designs para criar a caixa perfeita para seu presente.')">
+                    <div class="produto4"></div>
+                    <label for="produto4">Caixa Personalizada</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://cdn.atualcard.com.br/arquivos/menu/normais/calendario-de-parede-com-furo-e-bloco-t1.png', 'Calendário', '<li>Organização</li><br><li>Personalização</li><br><li>Presente personalizado</li><br><li>Publicidade</li><br><li>Decoração</li>','Calendários personalizados são uma ótima maneira de organizar sua vida com estilo. Com uma variedade de opções de tamanhos e designs, você pode criar um calendário exclusivo que se adapte às suas necessidades. Use-o para planejar seus compromissos, aniversários, datas importantes e muito mais. Além disso, os calendários personalizados são uma excelente opção de presente para amigos, familiares ou colegas de trabalho. Personalize com suas fotos favoritas e deixe cada mês mais especial. Peça o seu calendário personalizado agora mesmo e comece a organizar sua vida com estilo.')">
+                    <div class="produto5"></div>
+                    <label for="produto5">Calendário</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://mmcanecas.com/wp-content/uploads/2020/08/SUA-ARTE-VAI-AQUI.png', 'Camiseta', '<li>Presentes personalizados</li><br><li>Marketing</li><br><li>Personalização</li><br><li>Identificação de equipe</li><br><li>Seja Destaque!</li>','Camisas personalizadas: a maneira perfeita de mostrar seu estilo único! Escolha entre uma variedade de cores, tamanhos e designs para criar uma camisa que reflita sua personalidade. Adicione imagens, frases ou logotipos para mostrar sua criatividade e promover sua marca ou evento. As camisas personalizadas são ótimas para presentes exclusivos ou para uniformizar equipes. Experimente agora e faça uma declaração de moda personalizada!')">
+                    <div class="produto6"></div>
+                    <label for="produto6">Camiseta</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://graficafenixprint.com.br/wp-content/uploads/2023/02/cardapio-pvc-normal-medio-t1.png', 'Cardápio', '<li>Informação clara</li><br><li>Personalização</li><br><li>Facilidade de atualização</li><br><li>Aumento de vendas</li><br><li>Valor percebido</li>','Com um cardápio personalizado, seu negócio pode se destacar dos demais e deixar uma impressão duradoura em seus clientes. Personalize seu cardápio com seu logotipo, fotos de seus pratos e uma variedade de opções de design para torná-lo mais atraente. Além disso, um cardápio bem organizado pode ajudar seus clientes a escolherem o que desejam mais facilmente e aumentar as chances de pedirem mais itens. Não perca a oportunidade de encantar seus clientes e promover sua marca com um cardápio personalizado.')">
+                    <div class="produto7"></div>
+                    <label for="produto7">Cardápio</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://cdn.graficacores.com.br/arquivos/menu/normais/carimbos-nykon-categoria-t1.png', 'Carimbos', '<li>Personalização</li><br><li>Economia de tempo</li><br><li>Consistência</li><br><li>Durabilidade</li><br><li>Versatilidade</li><br>','Com Carimbos Personalizados você pode adicionar um toque especial aos seus documentos, envelopes, cartões de visita e muito mais. Eles também são uma ótima opção para empresas que desejam promover sua marca, adicionando seu logotipo ou informações de contato em seus materiais de escritório. Além disso, carimbos personalizados são uma opção acessível e durável, permitindo que você economize tempo e dinheiro em comparação com a impressão tradicional. Com a possibilidade de personalização, os carimbos são uma maneira eficiente e prática de fazer uma declaração pessoal ou profissional.')">
+                    <div class="produto8"></div>
+                    <label for="produto8">Carimbos</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://cdn.atualcard.com.br/arquivos/menu/normais/cartao-de-visita-250g-487x296-.png', 'Cartão de Visita', '<li>Profissionalismo</li><br><li>Conveniência</li><br><li>Personalização</li><br><li>Divulgação</li><br><li>Memorabilidade</li>','Cartões de visita são uma ferramenta essencial para qualquer profissional ou empresa. Eles fornecem uma maneira fácil e conveniente de apresentar suas informações de contato e ajudam a criar uma boa primeira impressão. Com cartões de visita personalizados, você pode destacar-se da concorrência e mostrar sua criatividade e estilo.')">
+                    <div class="produto9"></div>
+                    <label for="produto9">Cartão de Visita
+                    </label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://www.donnapresentes.com.br/image/cache/catalog/brindes/chaveiro-resinado-com-ps-personalizado-dn3008%20_2_-421x421.png', 'Chaveiros', '<li>Identificação</li><br><li>Personalização</li><br><li>Promoção</li><br><li>Presentes</li><br><li>Durabilidade</li>','Procurando por um brinde personalizado que seja prático e útil? Aposte em chaveiros personalizados! Com várias opções de formatos, cores e materiais, você pode criar um chaveiro que reflita sua personalidade ou promova sua marca. Além disso, eles são um item indispensável do dia a dia, mantendo suas chaves organizadas e fáceis de encontrar. Presenteie amigos e clientes com chaveiros personalizados que eles irão usar e apreciar. Compre já o seu!')">
+                    <div class="produto10"></div>
+                    <label for="produto10">Chaveiros</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://papeleestilo.com.br/wp-content/uploads/2015/10/convite-thaeme.png', 'Convites','<li>Exclusividade</li><br><li>Impressão de qualidade</li><br><li>Detalhes personalizados</li><br><li>Atração de atenção</li><br><li>Memória duradoura</li>','Celebre momentos especiais de maneira única com convites personalizados! Com um convite personalizado, você pode transmitir a personalidade e o estilo do evento antes mesmo que ele comece. Seja um casamento, aniversário, formatura ou qualquer outra ocasião, um convite personalizado pode fazer toda a diferença. Com uma variedade de opções de design, papel, tamanho e acabamento, você pode criar um convite que seja verdadeiramente especial e memorável. Convide seus amigos e familiares para celebrar juntos e comece a criar o seu convite personalizado agora!')">
+                    <div class="produto11"></div>
+                    <label for="produto11">Convites</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://copias.supermidiapf.com.br/wp-content/uploads/sites/4/impressao/Prancheta-1-c%C3%B3pia-71.png', 'Cópia', '<li>Conveniência</li><br><li>Economia</li><br><li>Preservação</li><br><li>Acesso fácil</li><br><li>Organização</li><br>','Precisa fazer cópias de documentos importantes ou projetos especiais? Nós podemos ajudar! Oferecemos serviços de cópias de alta qualidade e precisão, utilizando equipamentos modernos e de última geração. Além disso, nosso atendimento é rápido e eficiente, garantindo que você receba suas cópias no prazo estipulado. Venha nos visitar e experimente o nosso serviço de cópias hoje mesmo!')">
+                    <div class="produto12"></div>
+                    <label for="produto12">Cópia</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://d3ugyf2ht6aenh.cloudfront.net/stores/001/245/793/products/mockup16139960562091-f666892c4effc8692516140009244472-640-0.png', 'Copos Personalizados', 'Copos Personalizados')">
+                    <div class="produto13"></div>
+                    <label for="produto13">Copos Personalizados</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://ideiagraficaebrindes.com.br/wp-content/uploads/2021/08/crachapvc.png', 'Crachá', 'Crachá')">
+                    <div class="produto14"></div>
+                    <label for="produto14">Crachá
+                    </label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://www.regrafica.com.br/uploads/images/2019/09/31-credencial-para-eventos-1567708185.png', 'Credencial', 'Credencial')">
+                    <div class="produto15"></div>
+                    <label for="produto15">Credencial
+                    </label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://cdn.imprimarapido.com.br/arquivos/menu/normais/Prisma_Geral-thumb-249x181.png', 'Display de Mesa', 'Display de Mesa')">
+                    <div class="produto16"></div>
+                    <label for="produto16">Display de Mesa</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://dataphoto.com.br/wp-content/uploads/2019/03/000000078.png', 'Encadernação', 'Encadernação')">
+                    <div class="produto17"></div>
+                    <label for="produto17">Encadernação</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://www.espacograficosm.com.br/uploads/produtos/fichas-de-bebidas-6x4cm-papel-cartolina-180g-cores-100fls-c-cola-lateral-1x0-1654262298413193118629a0a1a12aaa.png', 'Fichas', 'Fichas')">
+                    <div class="produto18"></div>
+                    <label for="produto18">Fichas</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://cdn.graficacores.com.br/arquivos/menu/normais/folder-a5-promocional-14x20.png', 'Folder/Panfleto', 'Folder/Panfleto')">
+                    <div class="produto19"></div>
+                    <label for="produto19">Folder/Panfleto</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://s2.glbimg.com/3ZJq-VZrYPUUhfEgGzOAVSM6i3w=/0x0:695x612/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/2/x/EZQGczQkm43pa5OuQJDw/2016-12-21-taz-6-angle-main-product-page.png', 'Impressões 3D', 'Impressões 3D')">
+                    <div class="produto20"></div>
+                    <label for="produto20">Impressões 3D</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://cdn.atualcard.com.br/arquivos/menu/normais/pasta_thumb-.png', 'Pasta C/ Bolso', 'Pasta C/ Bolso')">
+                    <div class="produto21"></div>
+                    <label for="produto21">Pasta C/ Bolso
+                    </label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://www.prolam.com.br/wp-content/uploads/2020/11/prolam-polaseal-1.png', 'Plastificação', 'Plastificação')">
+                    <div class="produto22"></div>
+                    <label for="produto22">Plastificação</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://static.vhsys.com/vh-drive/produtos/35727545/PLOTAGEM_A0_d3d172e.png', 'Plotagem', 'Plotagem')">
+                    <div class="produto23"></div>
+                    <label for="produto23">Plotagem</label>
+                </div>
+                <div class="produto"
+                    onclick="mostrarModal('https://www.deskshare.com/images/OverviewPages/psp/ComboPackshot-New.jpg', 'Scanner', 'Scanner')">
+                    <div class="produto24"></div>
+                    <label for="produto24">Scanner</label>
+                </div>
+            </div>
+            <!-- =====================MODAL=================== -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="fecharModal()">&times;</span>
+
+                    <div class="apresentacaoProdutoModal">
+                        <h3 id="modal-title"></h3>
+                        <img id="modal-img" src="" alt="Imagem do produto" />
+
+                        <ul id="pontosPositivosModal">
+                        </ul>
+
+                    </div>
+
+                    <div class="detalhesModal">
+                        <h3>Detalhes</h3>
+                        <p id="detalhes-Modal"></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="clientes">
+            <h2>Clientes</h2>
+            <div class="logoClientes">
+                <div class="cliente cliente1"></div>
+                <div class="cliente cliente2"></div>
+                <div class="cliente cliente3"></div>
+                <div class="cliente cliente4"></div>
+                <div class="cliente cliente5"></div>
+                <div class="cliente cliente6"></div>
+                <div class="cliente cliente7"></div>
+                <div class="cliente cliente8"></div>
+            </div>
+            <h3>AVALIAÇÕES</h3>
+            <div class="avaliacoes">
+                <div class="avaliacaoCliente avaliacaoCliente1">
+                    <div class="avaliacaoCliente1Imagem"></div>
+                    <div class="nomeCliente nomeCliente1"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="avaliacaoCliente avaliacaoCliente2">
+                    <div class="avaliacaoCliente2Imagem"></div>
+                    <div class="nomeCliente nomeCliente2"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="avaliacaoCliente avaliacaoCliente3">
+                    <div class="avaliacaoCliente3Imagem"></div>
+                    <div class="nomeCliente nomeCliente3"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="avaliacaoCliente avaliacaoCliente4">
+                    <div class="avaliacaoCliente4Imagem"></div>
+                    <div class="nomeCliente nomeClient41"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="avaliacaoCliente avaliacaoCliente5">
+                    <div class="avaliacaoCliente5Imagem"></div>
+                    <div class="nomeCliente nomeCliente5"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="avaliacaoCliente avaliacaoCliente6">
+                    <div class="avaliacaoCliente6Imagem"></div>
+                    <div class="nomeCliente nomeCliente6"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente6">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="avaliacaoCliente avaliacaoCliente7">
+                    <div class="avaliacaoCliente7Imagem"></div>
+                    <div class="nomeCliente nomeCliente7"><strong>WILGNER</strong></div>
+                    <div class="estrelasCliente7">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="areaContato">
+                <div class="formulario">
+                    <h2>Contate-nos</h2>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <label>Nome</label>
+                        <input class="inputForm" type="text" name="name" placeholder="Digite Seu Nome"
+                            autocomplete="off" required>
+                        <label>Email</label>
+                        <input class="inputForm" type="email" name="email" placeholder="Digite Seu email" required>
+                        <label>Mensagem</label>
+                        <textarea name="message" class="inputForm" cols="30" rows="10" placeholder="Digite Sua Mensagem"
+                            required></textarea>
+                        <button type="submit" id="envioDoFormulario">Enviar</button>
+                        <input type="hidden" name="accessKey" value="6b10c147-81a0-4537-a5fc-87b1622dabd5">
+                        <input type="hidden" name="redirectTo" value="https://wilgnerjr.github.io/grafica/">
+                    </form>
+                </div>
+                <div class="redesSociais">
+                    <div class="titleRedesScociais">
+                        <h2>REDES SOCIAIS</h2>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/vermelhinhocopias/?hl=pt-br">
+                            <div class="redeInstagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a
+                            href="https://www.facebook.com/Vermelhinhocopias/?eid=ARC5sq8VQDOUYDYtEywDa8o-O-Vm9lbDUPh3uBZQmRamGxpEqRnXfGECE0rlohhNjbNBe8foK2Eaymb_"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a
+                            href="https://wa.me/556536424441?text=Olá%20Bom%20Dia,%20Gostaria%20de%20fazer%20um%20orçamento."><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="whatsAppFlutuante">
+            <a href="https://wa.me/556536424441?text=Olá%20Bom%20Dia,%20Gostaria%20de%20fazer%20um%20orçamento."
+                target="_blank">
+                <i class="fa-brands fa-whatsapp" alt='icone do whatsapp para entrar em contato'></i>
+            </a>
+        </div>
+        <footer>
+            <div class="endereco">
+                <h2>Onde Estamos?</h2>
+                <address>
+                    <strong>
+                        Avenida: Historiador Rubens de Mendonça<br>
+                        Numero: 1807 <br>
+                        Bairro: Bosque da Saúde <br>
+                        Cidade: Cuiabá/MT <br>
+                        CEP: 78065-720 <br>
+                        Telefone: <i class="fa-solid fa-phone"></i>+55 (65) 3642-4441 <br>
+                        <div class="geolocalizacao">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122979.95216474576!2d-56.212475237500016!3d-15.58504879999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1af2986e783%3A0x69d4a060dcc3834!2sVermelhinho%20C%C3%B3pias!5e0!3m2!1spt-BR!2sbr!4v1681074309798!5m2!1spt-BR!2sbr"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </strong>
+                </address>
+            </div>
+            <div class="horarioDeFuncionamentofooter">
+                <div>
+                    <h2>HORÁRIO DE FUNCIONAMENTO</h2>
+                    <p>De Segunda à Sexta<br>
+                        Das 07:30h às 18:00h<br>
+                        & Sábado Das<br>
+                        08:00h às 11:30h
+                    </p>
+                </div>
+                <img src="images/faixada.jpg" alt="">
+            </div>
+        </footer>
+    </main>
+    <!-- JS -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
