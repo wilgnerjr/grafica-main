@@ -112,7 +112,9 @@ function mostrarModal(imagem, titulo, pontos, detalhes) {
   var pontosPositivos = document.getElementById("pontosPositivosModal");
   var detalhesModal = document.getElementById("detalhes-Modal");
 
-  modal.style.display = "block";
+  modal.style.display = "flex";
+  modal.style.alignItems = "center";
+  modal.style.justifyContent = "center";
   modalImg.src = imagem;
   modalTitle.innerHTML = titulo;
   pontosPositivos.innerHTML = pontos;
